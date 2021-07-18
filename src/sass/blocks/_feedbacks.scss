@@ -1,0 +1,32 @@
+.feedback {
+    padding: 79px 0 49px 0;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__img {
+        display: block;
+        width: 169px;
+        height: 169px;
+        margin-right: 60px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__marafone {
+        font-size: 14px;
+        color:#646464;
+        font-weight: 500;
+    }
+    &__descr {
+        width: 680px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        span {
+            font-family: 'MuseoModerno', cursive;
+        }
+    }
+}
