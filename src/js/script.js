@@ -79,4 +79,19 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+380 (99) 999-99-99");
 
+    $('form').submit(function(e){
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serializer()
+      }).done(function(){
+        $(this).find("input").val("");
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+
+        $('form').trigger('reset');
+      });
+      return false;
+    });
 });
