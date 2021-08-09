@@ -29,5 +29,29 @@
             height: 50px;
         }
     }
-    
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        li {
+            list-style: none;
+            margin: 0 10px;
+            border: none;
+        }
+        button {
+            font-size: 0;
+            border: none;
+            background: none;
+            width: 10px;
+            height: 10px;
+            background-color: $main-color;
+            border-radius: 50%;
+        }
+        .slick-active>button {
+            background-color: transparent;
+            border: solid 2px $main-color;
+        }
+    }
+
 }
