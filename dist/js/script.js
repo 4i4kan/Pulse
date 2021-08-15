@@ -1,25 +1,9 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-<<<<<<< HEAD
-        arrows: false,
-        asNavFor: '.carousel__inner_mini',
-        fade: true
-    });
-
-    $('.carousel__inner_mini').slick({
-        speed: 1200,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
-        slidesToShow: 3,
-        asNavFor: '.carousel__inner',
         centerMode: true,
-        centerPadding: '100px',
-        slidesToScroll: 1
-=======
-        slidesToShow: 1,
-        fade: true,
-        dots: true,
+        centerPadding: '60px',
+        slidesToShow: 2,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
         responsive: [
@@ -31,7 +15,6 @@ $(document).ready(function(){
                 }
             }
         ]
->>>>>>> c831c7ed0aa5e91f753048aa3d2f8b540bbf3619
     });
     
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
