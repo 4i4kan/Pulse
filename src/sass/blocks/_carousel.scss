@@ -2,17 +2,18 @@
     position: relative;
     padding: 30px 0;
     &__inner {
-        width: 950px;
+        width: 850px;
         margin: 0 auto;
         img {
             margin: 0 auto;
         }
     }
     &__inner_mini {
-        width: 1200px;
+        width: 1100px;
         margin: 0 auto;
         img {
             margin: 0 auto;
+            width: 80%;
         }
         .slick-current {
             transform: scale(1.1);
@@ -43,34 +44,6 @@
             height: 50px;
         }
     }
-<<<<<<< HEAD
     
     
-=======
-    .slick-dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        li {
-            list-style: none;
-            margin: 0 10px;
-            border: none;
-        }
-        button {
-            font-size: 0;
-            border: none;
-            background: none;
-            width: 10px;
-            height: 10px;
-            background-color: $main-color;
-            border-radius: 50%;
-        }
-        .slick-active>button {
-            background-color: transparent;
-            border: solid 2px $main-color;
-        }
-    }
-
->>>>>>> c831c7ed0aa5e91f753048aa3d2f8b540bbf3619
 }

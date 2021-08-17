@@ -65,13 +65,89 @@
     }
     .consultation {
         .container {
-            max-width: 600px;
+            max-width: 550px;
         }
         .title_left {
             font-size: 27px;
         }
     }
+    .catalog {
+        &__tabs {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__tab {
+            font-size: 14px;
+        }
+    }
 }
 @media (max-width: 575px) {
+    .consultation {
+        .title_left {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 36px;
+            width: 80%;
+        }
+    }
+    .promo {
+        &__icons {
+            width: 300px;
+        }
+        &__header {
+            font-size: 34px;
+        }
+        &__subheader {
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+    .catalog {
+        &__tab {
+            font-size: 11px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    
+}
+@media (max-width: 463px) {
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin-bottom: 8px;
+        }
+    }
+    
+}
+@media (max-width: 436px) {
+    .header {
+        flex-direction: column;
+        &__logo img {
+            margin-bottom: 15px;
+        }
+    }
+    .promo {
+        &__header {
+            text-align: center;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+    .catalog {
+        &__tab {
+            font-size: 12px;
+        }
+    }
 
 }
