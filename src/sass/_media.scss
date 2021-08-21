@@ -1,9 +1,19 @@
+@media (max-width: 1080px) {
+    .carousel__inner_mini {
+        width: 880px;
+    }
+}
+@media (max-width: 1000px) {
+    .carousel__inner_mini {
+        width: 760px;
+    }
+}
+
 @media (max-width: 991px) {
     .promo{
         .container {
             max-width: 750px !important;
         }
-
     }
     .advantages {
         .container {
@@ -32,7 +42,28 @@
     .catalog__content {
         justify-content: center;
     }
+    .feedback__img {
+        margin-left: 10px;
+        margin-right: 30px;
+    }
 }
+@media (max-width: 896px) {
+    .carousel {
+        .container {
+            max-width: 650px !important;
+        }
+        &__inner {
+            width: 600px;
+            img {
+                width: 600px;
+            }
+        }
+        &__inner_mini {
+            width: 600px;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .header {
         justify-content: space-around;
@@ -80,6 +111,47 @@
             font-size: 14px;
         }
     }
+    .feedback__img {
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+}
+@media (max-width: 727px) {
+    .carousel {
+        &__inner_mini {
+            width: 2px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .carousel {
+        .container {
+            max-width: 450px !important;
+        }
+        &__inner {
+            width: 400px;
+            img {
+                width: 400px;
+            }
+        }
+
+    }
+
+}
+@media (max-width: 450px) {
+    .carousel {
+        .container {
+            max-width: 300px !important;
+        }
+        &__inner {
+            width: 300px;
+            img {
+                width: 300px;
+            }
+        }
+
+    }
+
 }
 @media (max-width: 575px) {
     .consultation {
@@ -127,7 +199,36 @@
             margin-bottom: 8px;
         }
     }
+    .feedback {
+        padding-top: 35px;
+        .title {
+            font-size: 23px;
+        }
+        &__img {
+            widows: 100px;
+            height: 100px;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 20px;
     
+        }
+    }
+    .modal {
+        padding: 10px !important;
+        width: 220px !important;
+        input {
+            width: 200px !important;
+        }
+        button {
+            width: 67% !important;
+        } 
+        label.error {
+            width: 200px !important;
+            margin-bottom: 16px !important; 
+            font-size: 10px !important;    
+        }
+    }
 }
 @media (max-width: 436px) {
     .header {
@@ -150,4 +251,9 @@
         }
     }
 
+}
+@media (max-width: 330px){
+    .button_main {
+        width: 260px;
+    }
 }

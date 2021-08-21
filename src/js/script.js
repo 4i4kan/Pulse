@@ -3,7 +3,18 @@ $(document).ready(function(){
         speed: 1200,
         arrows: false,
         asNavFor: '.carousel__inner_mini',
-        fade: true
+        fade: true,
+        // responsive: [
+        //     {
+        //       breakpoint: 1240,
+        //       settings: {
+        //         slidesToShow: 3,
+        //         slidesToScroll: 3,
+        //         infinite: true,
+        //         dots: true
+        //       }
+        //     }
+        // ]
     });
 
     $('.carousel__inner_mini').slick({
@@ -14,7 +25,15 @@ $(document).ready(function(){
         asNavFor: '.carousel__inner',
         centerMode: true,
         centerPadding: '100px',
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        // responsive: [
+        //     {
+        //       breakpoint: 1240,
+        //       settings: {
+        //         slidesToShow: 2
+        //       }
+        //     }
+        // ]
     });
     
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -104,7 +123,7 @@ $(document).ready(function(){
         });
     //Smooth scroll and pageup
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 1600) {
+        if ($(this).scrollTop() > 2100) {
             $('.pageup').fadeIn();
         } else {
             $('.pageup').fadeOut();
