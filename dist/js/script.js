@@ -1,20 +1,20 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 2,
+        arrows: false,
+        asNavFor: '.carousel__inner_mini',
+        fade: true
+    });
+
+    $('.carousel__inner_mini').slick({
+        speed: 1200,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    dots: true,
-                    arrows: false
-                }
-            }
-        ]
+        slidesToShow: 3,
+        asNavFor: '.carousel__inner',
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToScroll: 1
     });
     
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -104,7 +104,7 @@ $(document).ready(function(){
         });
     //Smooth scroll and pageup
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 1600) {
+        if ($(this).scrollTop() > 2100) {
             $('.pageup').fadeIn();
         } else {
             $('.pageup').fadeOut();

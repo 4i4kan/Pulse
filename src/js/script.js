@@ -3,18 +3,7 @@ $(document).ready(function(){
         speed: 1200,
         arrows: false,
         asNavFor: '.carousel__inner_mini',
-        fade: true,
-        // responsive: [
-        //     {
-        //       breakpoint: 1240,
-        //       settings: {
-        //         slidesToShow: 3,
-        //         slidesToScroll: 3,
-        //         infinite: true,
-        //         dots: true
-        //       }
-        //     }
-        // ]
+        fade: true
     });
 
     $('.carousel__inner_mini').slick({
@@ -25,15 +14,7 @@ $(document).ready(function(){
         asNavFor: '.carousel__inner',
         centerMode: true,
         centerPadding: '100px',
-        slidesToScroll: 1,
-        // responsive: [
-        //     {
-        //       breakpoint: 1240,
-        //       settings: {
-        //         slidesToShow: 2
-        //       }
-        //     }
-        // ]
+        slidesToScroll: 1
     });
     
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
